@@ -16,7 +16,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ServicesInAndroid">
         <activity
-            android:name=".basicboundservices.BoundServiceActivity"
+            android:name=".musicservice.MusicActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,13 +25,24 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".basicbackgroundservice.BackgroundServiceActivity"
+            android:name=".basicboundservices.BoundServiceActivity"
             android:exported="true">
 <!--            <intent-filter>-->
 <!--                <action android:name="android.intent.action.MAIN" />-->
 
 <!--                <category android:name="android.intent.category.LAUNCHER" />-->
 <!--            </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".basicbackgroundservice.BackgroundServiceActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".basicforegroundservice.ForegroundServicesActivity"
@@ -65,6 +76,9 @@
             android:exported="true" />
         <service
             android:name=".basicboundservices.BoundService"
+            android:exported="true" />
+
+        <service android:name=".musicservice.MusicService"
             android:exported="true" />
     </application>
 
